@@ -1,0 +1,30 @@
+<h1>Cadastro de Pessoas</h1>
+
+<table class="table table-striped">
+  <thead>
+  <tr>
+    <th scope="col">ID</th>
+    <th scope="col">Nome</th>
+    <th scope="col">CPF/CNPJ</th>
+    <th scope="col">RG</th>
+    <th scope="col">Data Nascimento</th>
+    <th scope="col">Endereco</th>
+    <th scope="col">Numero</th>
+    <th scope="col">Complemento</th>
+    <th scope="col">CEP</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let pessoa of pessoas">    
+    <td>{{ pessoa.codigoPessoa | number }}</td>
+    <td>{{ pessoa.nome }}</td>
+    <td>{{ pessoa.cpfCnpj }}</td>
+    <td>{{ pessoa.rg }}</td>
+    <td>{{ pessoa.dataNascimento }}</td>
+    <td>{{ pessoa.endereco }}</td>
+    <td>{{ pessoa.numero }}</td>
+    <td>{{ pessoa.complemento }}</td>
+    <td>{{ pessoa.cep }}</td>
+  </tr>
+  </tbody>
+</table>
